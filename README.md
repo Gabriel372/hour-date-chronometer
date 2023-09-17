@@ -1,4 +1,4 @@
-![Captura de Tela (85)](https://github.com/Gabriel372/hour-date-chronometer/assets/124525153/3e31b533-de7f-4bb9-8207-3a97a10f38ea)
+![Captura de Tela (86)](https://github.com/Gabriel372/hour-date-chronometer/assets/124525153/f482590b-cb8d-4ae2-a78d-cacbf2e2dbb8)
 
 # Getting Started with Create React App
 
