@@ -1,0 +1,27 @@
+.divChon{
+background-color: black;
+border: 1px solid red;
+border-radius: 10px;
+padding-bottom: 10px;
+margin-top: 10px;
+}
+.divBtn{
+display: flex;
+max-width: 100px;
+justify-content: space-between;
+margin: auto;
+}
+h1{color: red;
+margin: 0;
+margin-bottom: 8px;}
+p{
+color: white; 
+margin-top: 8px;
+margin-bottom: 0px;   
+}
+button{
+color: red;
+background-color: black;
+border: 1px solid red;
+border-radius: 5px;
+}

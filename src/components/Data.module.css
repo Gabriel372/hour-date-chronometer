@@ -1,0 +1,33 @@
+.divData{
+    border: 1px solid red;    
+    border-radius: 10px;
+    background-color: black;
+    min-width: 200px;
+    max-width: 320px;
+    margin-top: 10px;
+    }
+    .fontData{
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    color: red;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 10px ;
+    margin: 0;   
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    }
+    .pData{
+        color: white;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        min-width: 300px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        padding-right: 20px;
+        }
+
+
