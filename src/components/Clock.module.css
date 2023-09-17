@@ -3,8 +3,6 @@ font-family: 'Alumni Sans Inline One', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Press Start 2P', cursive;
 color: red;
-/* background-color: black; */
-/* max-width: 700px; */
 display: inline-block;
 padding: 30px;
 padding-bottom: 0;
@@ -17,7 +15,6 @@ border-radius: 10px;
 background-color: black;
 min-width: 200px;
 max-width: 320px;
-
 }
 .pClock{
 color: white;
