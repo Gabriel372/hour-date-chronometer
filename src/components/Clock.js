@@ -1,19 +1,19 @@
 import style from './Clock.module.css'
 import {useState,useEffect} from 'react'
 function Clock() {
-const [useClock,setClock] = useState('')//meu relogio
+const [useClock,setClock] = useState('')
 
-useEffect( () => {//useffect monitora cada alteracao do tempo
+useEffect( () => {
 const timerNow = () => {
 let timer = new Date() ;
 let hour = timer.getHours() ;    
 let min = timer.getMinutes() ;
 let sec = timer.getSeconds() ;
-let hms = `${hour}:${min}:${sec}` //soma hh mm ss
-setClock(hms)//clock definido
+let hms = `${hour}:${min}:${sec}` 
+setClock(hms)
 }
-timerNow()//chama a func
-setInterval(timerNow,1000)//atualizacao a cada s
+timerNow()
+setInterval(timerNow,1000)
 },[])
 
 return<div className={style.divClock}>
