@@ -40,9 +40,13 @@ if (second === 60) {
     }
 }, [milisec,second])
 
+const Check = (value) => {
+return value < 10 ? '0' + value : value
+}
+
 return <div className={style.divChon}>
 <p>Cronômetro</p>    
-<h1><span>{milisec}</span>:<span>{second}</span>:<span>{minute}</span></h1>
+<h1><span>{Check(milisec)}</span>:<span>{Check(second)}</span>:<span>{Check(minute)}</span></h1>
 <div className={style.divBtn}>
 <button type="button" onClick={Play}><IoIosPlay /></button>
 <button type="button"onClick={Pause}><IoIosPause/></button>
