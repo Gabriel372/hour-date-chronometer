@@ -1,24 +1,27 @@
 import style from './Clock.module.css'
 import {useState,useEffect} from 'react'
+
 function Clock() {
-const [useClock,setClock] = useState('')
+const [second,setSec] = useState('')
+const [minute,setMin] = useState('')
+const [hour,setHour] = useState('')
 
-useEffect( () => {
-const timerNow = () => {
-let timer = new Date() ;
-let hour = timer.getHours() ;    
-let min = timer.getMinutes() ;
-let sec = timer.getSeconds() ;
-let hms = `${hour}:${min}:${sec}` 
-setClock(hms)
-}
-timerNow()
-setInterval(timerNow,1000)
-},[])
+const makeClock = () => {
+let timerGenerator = new Date()
+setSec(timerGenerator.getSeconds())
+setMin(timerGenerator.getMinutes())
+setHour(timerGenerator.getHours())}
 
-return<div className={style.divClock}>
+useEffect(()=>{
+makeClock()
+setInterval(makeClock,1000) },[])
+
+const Check = (value) => {
+return value < 10 ? '0' + value : value }
+
+return <div className={style.divClock}>
 <h1 className={style.fontClock}>{useClock}</h1>
-<p className={style.pClock}><span>hora</span><span>min</span><span>seg</span></p>
+<p className={style.pClock}><span>{Check(hour)}</span>:<span>{Check(minute)}</span>:<span>{Check(second)}</span></p>
 </div>
 }
 
